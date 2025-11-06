@@ -1,10 +1,4 @@
 # Toy Antivirus
-**Advanced Algorithms Mini-Project**
-
-| Author | Student ID |
-| :--- | :--- |
-| **ZAGHDANE Ihab** | **2300056** |
-
 ---
 
 ## What I Built
