@@ -3,9 +3,9 @@
 
 ## What I Built
 
-A simplified antivirus simulator that manages files using linked lists. The program can detect suspicious files by matching patterns in their names and move them between different lists (Clean, Suspect, and Quarantine).
+An antivirus simulator that manages files using linked lists. The program can detect suspicious files by matching patterns in their names and move them between different lists (Clean, Suspect, and Quarantine).
 
-It's not a real antivirus - I'm just working with fake files that have a name and size. But it uses the same ideas as real antivirus software: scanning files against signatures, isolating suspicious ones, and managing them in different categories.
+We're working with fake files that have a name and size. But it uses the same ideas as real antivirus software: scanning files against signatures, isolating suspicious ones, and managing them in different categories.
 
 ---
 
@@ -103,14 +103,14 @@ Here's what you can do with my program:
 
 | Command | Example | What it does |
 |---------|---------|-------------|
-| ADD_SIG | `ADD_SIG virus` | Adds a malware pattern |
-| DEL_SIG | `DEL_SIG virus` | Removes a pattern |
-| LOAD | `LOAD file.txt 1024` | Creates a mock file |
-| SCAN | `SCAN` | Checks files for patterns |
-| QUAR | `QUAR file.txt` | Moves file to quarantine |
-| RESTORE | `RESTORE file.txt` | Moves file back to clean |
-| REPORT | `REPORT` | Shows everything |
-| PURGE | `PURGE` | Deletes all data |
+| ADD_PATTERN | `ADD_PATTERN virus` | Adds a malware pattern |
+| DEL_PATTERN | `DEL_PATTERN virus` | Removes a pattern |
+| LOAD_FILE | `LOAD_FILE file.txt 1024` | Creates a mock file |
+| ANALYZE | `SCAN` | Checks files for patterns |
+| ISOLATE | `QUAR file.txt` | Moves file to quarantine |
+| RELEASE | `RELEASE file.txt` | Moves file back to clean |
+| STATUS | `STATUS` | Shows a report of the files and sig database |
+| RESET_ALL | `RESET_ALL` | Deletes all data |
 | EXIT | `EXIT` | Quits the program |
 
 ---
