@@ -3,7 +3,7 @@
 
 ## What I Built
 
-I made a simple antivirus simulator in C that manages files using linked lists. The program can detect suspicious files by matching patterns in their names and move them between different lists (Clean, Suspect, and Quarantine).
+I made a simple antivirus simulator that manages files using linked lists. The program can detect suspicious files by matching patterns in their names and move them between different lists (Clean, Suspect, and Quarantine).
 
 It's not a real antivirus - I'm just working with fake files that have a name and size. But it uses the same ideas as real antivirus software: scanning files against signatures, isolating suspicious ones, and managing them in different categories.
 
