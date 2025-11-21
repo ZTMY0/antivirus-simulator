@@ -34,10 +34,10 @@ I have four linked lists in my program:
 ### File Node
 ```c
 struct FileRec {
-    char *name;              // The filename
-    size_t size;             // How big the file is
-    int is_suspicious;       // 0 or 1 flag
-    struct FileRec *next;    // Points to next file in list
+    char *name;              
+    size_t size;             
+    int is_suspicious;       
+    struct FileRec *next;   
 };
 ```
 
@@ -46,8 +46,8 @@ I used `char *name` instead of a fixed array because filenames can be different 
 ### Signature Node
 ```c
 struct Sig {
-    char *pattern;           // The pattern to look for
-    struct Sig *next;        // Next signature
+    char *pattern;           
+    struct Sig *next;        
 };
 ```
 
@@ -204,12 +204,10 @@ The program does what it's supposed to do - it manages files in linked lists, sc
 ## How to Compile and Run
 
 ```bash
-# Compile
 gcc -Wall -Wextra -o antivirus antivirus.c
 
-# Run
 ./antivirus
 
-# Check for memory leaks
+# for memory leaks
 valgrind --leak-check=full ./antivirus
 ```
